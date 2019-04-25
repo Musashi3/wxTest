@@ -1,0 +1,44 @@
+/* pages/song/song.wxss */
+.nav{
+  position:fixed;
+  height:20px;
+  top:60rpx!important;
+  font-size:14px;
+}
+.nav>text{
+  font-size:16px;
+  margin-right:20rpx;
+}
+.song{
+  position:absolute;
+  top:30%;
+  left:25%;
+  text-align:center;
+}
+image{
+  width:400rpx;
+  height:400rpx;
+}
+.song>view{
+  width:402rpx;
+  height:100rpx;
+  font-size:16px;
+  line-height:100rpx;
+  box-shadow: 0 5rpx 10rpx #000;
+}
+.songBtn{
+  position: absolute;
+  top:74%;
+  left:25%;
+  width:400rpx;
+  height:60rpx;
+  border-radius:40rpx;
+  color:#fff;
+  line-height:60rpx;
+  background:#f00;
+  text-align: center;
+  font-size:14px;
+}
+.btn2{
+  top:80%;
+}

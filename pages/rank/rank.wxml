@@ -1,0 +1,51 @@
+<!--pages/rank/rank.wxml-->
+<view>
+  <navbar title="排行榜"></navbar>
+   <view class="Body">
+    <view class="btns">
+      <view wx:for="{{btns}}" wx:key="index" wx:for-item="item" class="{{num==index?'check':''}}" bindtap='changeCheck' data-index="{{index}}">
+        {{item.title}}
+      </view>
+    </view>
+   <view>
+    <swiper current='{{num}}' bindchange='changeCheck2'>
+      <swiper-item>
+          <view class="font">仅展示微信好友（每月1日更新）</view>
+          <view class="rankList">
+            <view wx:for="{{friendList}}" wx:key="index" wx:for-item="item">
+              <view class="rankNum">
+                <view>{{index+1}}</view>
+                <view><image src="{{item.img_url}}"></image></view>
+              </view>
+              <view class="userName">
+                <view>{{item.uname}}</view>
+                <view bindtap='isInvite' data-index="{{index}}">{{item.invite}}</view>
+              </view>
+            </view>
+          </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="font">仅展示全网单句平均分top100作品(每日更新)</view>
+        <view class="jumpSong">
+          <view>你还没有上榜哦，快唱歌打榜吧！</view>
+          <view bindtap='jump'>点歌</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="font">仅展示微信好友(每月1日更新)</view>
+        <view>
+          <image src="../../img/nothing.png" class="nothing"></image>
+          <view class="font">当前还未有人打榜哦.赶快去唱歌成为K歌之王吧</view>
+        </view>
+      </swiper-item>
+      <swiper-item>
+        <view class="font">仅展示附近收礼top100作品</view>
+      </swiper-item>
+    </swiper>
+   </view> 
+  </view>
+  <view class="shareBtn">
+     <view>分享到微信群，查看我的群排名</view>
+     <view bindtap='share'>分享</view>
+  </view>
+</view>

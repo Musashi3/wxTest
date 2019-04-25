@@ -1,0 +1,101 @@
+<!--index.wxml-->
+<view>
+  <navbar title="点歌台"></navbar>
+  <view class="Body">
+    <view>
+      <input type="text" placeholder='搜索歌手名/歌曲名' class="search"></input>
+    </view>
+    <!-- 轮播图 -->
+    <view>
+      <swiper autoplay="true">
+        <swiper-item>
+          <image src="../../img/banner/1.png" class="banner"></image>
+        </swiper-item>
+         <swiper-item>
+          <image src="../../img/banner/1.png" class="banner"></image>
+        </swiper-item>
+         <swiper-item>
+          <image src="../../img/banner/1.png" class="banner"></image>
+        </swiper-item>
+     </swiper>
+    </view>
+     <view class="buttons">
+        <view wx:for="{{list}}" wx:key="index" wx:for-item="item" class="{{num==index?'checked':''}}" bindtap="changeCheck" data-index="{{index}}">{{item.title}}</view>
+     </view>
+     <!-- 轮播列表 -->
+     <view>
+        <swiper class="songList" current="{{num}}" bindchange="changeCheck2">
+            <swiper-item>
+              <scroll-view scroll-y="true" scroll-top="true">
+                <view wx:for="{{songList}}" wx:for-item="item" class="song">
+                  <view>
+                    <image src="{{item.img_url}}"></image>
+                  </view>
+                  <view>
+                      <view>
+                          <view class="songTitle">{{item.title}}1</view>
+                          <view class="songer">{{item.songer}}</view>
+                          <view class="num">{{item.num}}万人在唱</view>
+                      </view>
+                      <view bindtap='jump' data-idx="{{index}}">
+                          K歌
+                      </view>
+                  </view>
+                </view>
+              </scroll-view>
+            </swiper-item>
+            <swiper-item>
+              <view wx:for="{{songList}}" wx:for-item="item" class="song">
+                <view>
+                  <image src="{{item.img_url}}"></image>
+                </view>
+                <view>
+                    <view>
+                        <view class="songTitle">{{item.title}}2</view>
+                        <view class="songer">{{item.songer}}</view>
+                        <view class="num">{{item.num}}万人在唱</view>
+                    </view>
+                    <view>
+                        K歌
+                    </view>
+                  </view>
+                </view>
+            </swiper-item>
+            <swiper-item>
+              <view wx:for="{{songList}}" wx:for-item="item" class="song">
+                <view>
+                  <image src="{{item.img_url}}"></image>
+                </view>
+                <view>
+                    <view>
+                        <view class="songTitle">{{item.title}}3</view>
+                        <view class="songer">{{item.songer}}</view>
+                        <view class="num">{{item.num}}万人在唱</view>
+                    </view>
+                    <view>
+                        K歌
+                    </view>
+                  </view>
+                </view>
+            </swiper-item>
+            <swiper-item>
+              <view wx:for="{{songList}}" wx:for-item="item" class="song">
+                <view>
+                  <image src="{{item.img_url}}"></image>
+                </view>
+                <view>
+                    <view>
+                        <view class="songTitle">{{item.title}}4</view>
+                        <view class="songer">{{item.songer}}</view>
+                        <view class="num">{{item.num}}万人在唱</view>
+                    </view>
+                    <view>
+                        K歌
+                    </view>
+                  </view>
+                </view>
+            </swiper-item>
+        </swiper>
+     </view>
+  </view>
+</view>

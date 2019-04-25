@@ -1,0 +1,42 @@
+<!--pages/user/user.wxml-->
+<view>
+  <navbar title="我的个人主页"></navbar>
+  <view class="Body">
+    <view class="jump">
+      <view>请下载全民K歌完成作品管理</view>
+      <view bindtap='jump'>点击查看</view>
+    </view>
+    <view class="userData">
+      <view>
+        <image src="../../img/touxiang/3.jpg" class="touxiang"></image>
+      </view>
+      <view>
+        <view>Nameless</view>
+        <view class="kNum">K歌号：439887686</view>
+      </view>
+      <view class="share">分享</view>
+    </view>
+    <view class="tabbarList">
+      <view>
+        <image src="../../img/tabbar/mission.png" class="tabbar"></image>
+        <view>任务中心</view>
+      </view>
+      <view>
+        <image src="../../img/tabbar/flower.png" class="tabbar"></image>
+        <view>鲜花数：13</view>
+      </view>
+      <view>
+        <image src="../../img/tabbar/Kbi.png" class="tabbar"></image>
+        <view>K币数：0</view>
+      </view>
+    </view>
+    <view class="nothing">
+      <image  src="../../img/nothing.png"></image>
+      <view>该用户还没有发表过作品</view>
+    </view>
+  </view>
+  <view class="back">
+    <view>如果使用中遇到什么问题可以反馈给我们</view>
+    <view>去反馈</view>
+  </view>
+</view>

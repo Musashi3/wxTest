@@ -1,0 +1,129 @@
+/* pages/rank/rank.wxss */
+.Body{
+  position:fixed;
+  top:4rem;
+  border-radius: 10px;
+  background:#fff;
+  height:100%;
+  width:90%;
+  padding:1rem;
+}
+.btns{
+  margin:0 10% 20rpx;
+  width:80%;
+  display:flex;
+  font-size:12px;
+  color:#aaa;
+  justify-content: space-around;
+}
+.btns>view{
+  width:120rpx;
+  text-align:center;
+}
+.check{
+  border-radius: 10px;
+  background:#f00;
+  color:#fff;
+  font-size:12px;
+}
+image{
+  width:100rpx;
+  height:100rpx;
+  border-radius:50%;
+}
+.rankList>view{
+  height:100rpx;
+  margin-bottom:40rpx;
+}
+.rankList>view,.rankNum,.userName{
+  display:flex;
+}
+.rankNum>view:first-child{
+  line-height:100rpx;
+  font-size:20px;
+  margin-right:20rpx;
+}
+.rankNum{
+  margin-right:10rpx;
+}
+.userName{
+  width:100%;
+  justify-content: space-between;
+  border-bottom:1px solid rgba(0,0,0,0.05);
+}
+.userName>view:first-child{
+  line-height: 100rpx;
+  font-size:16px;
+}
+.userName>view:last-child{
+  background:rgba(0,0,0,0.05);
+  width:130rpx;
+  height:60rpx;
+  color:#c00;
+  font-size:16px;
+  text-align:center;
+  line-height:60rpx;
+  position:relative;
+  top:20rpx;
+  border-radius:40rpx;
+}
+swiper{
+  height:1000rpx;
+}
+.font{
+  font-size:12px;
+  color:#aaa;
+  text-align:center;
+  margin-bottom:20rpx;
+}
+.nothing{
+  width:622rpx;
+  height:424rpx;
+  margin-left:50rpx;
+}
+.jumpSong{
+  display:flex;
+  width:100%;
+  height:80rpx;
+  line-height:80rpx;
+  justify-content: space-between;
+  font-size:14px;
+  background:rgba(0,0,0,0.05);
+}
+.jumpSong>view:last-child{
+  width:100rpx;
+  height:60rpx;
+  background:#fff;
+  border-radius:30rpx;
+  line-height:60rpx;
+  text-align:center;
+  color:#f00;
+  position:relative;
+  top:10rpx;
+  right:10rpx;
+}
+.shareBtn{
+  background:rgba(0,0,0,0.5);
+  color:#fff;
+  font-size:14px;
+  width:100%;
+  position:fixed;
+  top:93%;
+  display:flex;
+  line-height: 80rpx;
+  height:80rpx;
+  justify-content: space-between;
+  padding:0 20rpx;
+}
+.shareBtn>view:last-child{
+  width:100rpx;
+  height:50rpx;
+  background:#fff;
+  color:#000;
+  line-height:50rpx;
+  position:relative;
+  top:15rpx;
+  right:40rpx;
+  text-align: center;
+  border-radius:40rpx;
+}

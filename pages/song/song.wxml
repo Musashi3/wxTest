@@ -1,0 +1,15 @@
+<!--pages/song/song.wxml-->
+<view>
+  <navbar>
+    <view class="nav">
+      <text decode='true' bindtap='jump'>&lt;</text>
+      {{song.title}}
+    </view>
+  </navbar>
+  <view class="song">
+      <image src="{{song.img_url}}"></image>
+      <view>原唱：{{song.songer}}</view>
+  </view>
+  <view class="songBtn">录副歌</view>
+  <view class="songBtn btn2">录整首</view>
+</view>
